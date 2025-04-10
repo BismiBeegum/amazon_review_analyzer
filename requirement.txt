@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+altair
+scikit-learn
+streamlit-authenticator
+streamlit-option-menu
+selenium
+webdriver-manager
+beautifulsoup4
+pickle
