@@ -12,17 +12,18 @@ View insights like sentiment distribution
 See search history and leave feedback
 
 ## 🚀 Features
-✅ User authentication (signup/login)
 
-🔎 Scrape Amazon product details (title, image, price, reviews)
+User authentication (signup/login)
 
-🧠 Sentiment prediction using a trained SVM model
+Scrape Amazon product details (title, image, price, reviews)
 
-📊 Interactive UI built with Streamlit
+Sentiment prediction using a trained SVM model
 
-📁 Session history stored locally
+Interactive UI built with Streamlit
 
-📬 Feedback submission
+Session history stored locally
+
+Feedback submission
 
 ## 🛠️ Tech Stack
 Frontend/UI: Streamlit, Streamlit Option Menu
