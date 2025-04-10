@@ -62,17 +62,22 @@ csharp
 Copy
 Edit
 .
-├── ui.py                  # Main Streamlit app
-├── amazonui.py            # Amazon scraper logic
-├── svm_model.sav          # Pickled SVM model
-├── hashed_pw.pkl          # Pickled hashed passwords
-├── images/                # UI assets
-├── output.csv             # User data
-├── out.csv                # Review predictions
-├── outlink.csv            # Product links
-├── requirements.txt       # Python dependencies
-└── README.md              # Project overview
+├── streamlit_userInterface.py                  # Main Streamlit app
+├── pdt_reviewCollector.py                       # Amazon scraper logic
+├── svm_model.sav                               # Pickled SVM model
+├── hashed_pw.pkl                               # Pickled hashed passwords
+├── images/                                     # UI assets
+├── output.csv                                  # User data
+├── out.csv                                     # Review predictions
+├── outlink.csv                                 # Product links
+├── requirements.txt                            # Python dependencies
+└── README.md                                   # Project overview
 
+## 🎯 steps for running the repository
+1. run pdt_reviewCollector.py
+2. if planning to use customized model change the path to saved model and perform appropriate data inference.
+3. run streamlit_userInterface.py using command: streamlit run streamlit_userInterface.py
+4. Login and perform analysis.
 
 ## 🤖 Model Info
 The model (svm_model.sav) is trained on labeled Amazon reviews using TF-IDF + SVM. You can retrain it on your own dataset for customization. save and load it by changing pah to the model.
