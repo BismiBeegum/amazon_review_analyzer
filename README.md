@@ -3,13 +3,13 @@
 
 This project is a web app built using Streamlit that performs sentiment analysis on Amazon product reviews. It allows users to:
 
-🔍 Search for Amazon products
+Search for Amazon products
 
-🤖 Analyze review sentiments using a pre-trained ML model (SVM)
+Analyze review sentiments using a pre-trained ML model (SVM)
 
-🧾 View insights like sentiment distribution
+View insights like sentiment distribution
 
-💾 See search history and leave feedback
+See search history and leave feedback
 
 ## 🚀 Features
 ✅ User authentication (signup/login)
