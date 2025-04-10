@@ -11,7 +11,7 @@ This project is a web app built using Streamlit that performs sentiment analysis
 
 💾 See search history and leave feedback
 
-🚀 Features
+## 🚀 Features
 ✅ User authentication (signup/login)
 
 🔎 Scrape Amazon product details (title, image, price, reviews)
@@ -24,7 +24,7 @@ This project is a web app built using Streamlit that performs sentiment analysis
 
 📬 Feedback submission
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 Frontend/UI: Streamlit, Streamlit Option Menu
 
 Backend: Python
@@ -37,7 +37,7 @@ Web Scraping: Selenium
 
 Data Handling: Pandas
 
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 Clone the repository:
 
 bash
@@ -57,7 +57,7 @@ bash
 Copy
 Edit
 streamlit run ui.py
-📁 File Structure
+## 📁 File Structure
 csharp
 Copy
 Edit
@@ -74,7 +74,7 @@ Edit
 └── README.md              # Project overview
 
 
-🤖 Model Info
+## 🤖 Model Info
 The model (svm_model.sav) is trained on labeled Amazon reviews using TF-IDF + SVM. You can retrain it on your own dataset for customization. save and load it by changing pah to the model.
 
 ✨ TODOs / Improvements
@@ -84,5 +84,5 @@ The model (svm_model.sav) is trained on labeled Amazon reviews using TF-IDF + SV
 
  Host app publicly (e.g. Streamlit Cloud)
 
-📬 Feedback or Issues?
+## 📬 Feedback or Issues?
 Feel free to open an issue or leave feedback using the app’s Feedback section!
