@@ -1,4 +1,4 @@
-#📦 Amazon Review Analysis with Streamlit
+📦 #Amazon Review Analysis with Streamlit
 This project is a web app built using Streamlit that performs sentiment analysis on Amazon product reviews. It allows users to:
 
 🔍 Search for Amazon products
