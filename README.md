@@ -40,7 +40,7 @@ This script uses the `kagglehub` library to download and move the dataset to you
 
  ## 📁 File Structure 
  ```bash 
- . ├── streamlit_userInterface.py # Main Streamlit app
+├── streamlit_userInterface.py # Main Streamlit app
 ├── pdt_reviewCollector.py # Amazon scraper logic
 ├── lstm_review_classifier.py # Logic to load model and predict
 ├── model_creation.py # Script to train and save LSTM model
