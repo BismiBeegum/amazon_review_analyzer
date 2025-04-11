@@ -29,17 +29,31 @@ git clone https://github.com/your-username/amazon-review-analysis.git cd amazon-
 ```bash 
 streamlit run streamlit_userInterface.py
 ```
-## 📥 Dataset Download
-To download the Amazon Review dataset used for training, you can use the `kagglehub` library: 
+## 📥 Dataset Download 
+To download the Amazon Review dataset used for training the model, run the provided script: 
+```bash 
+python dataset_download.py
 ```
-python import kagglehub import shutil import os # Download to default kagglehub location download_path = kagglehub.dataset_download("purvitsharma/amazonn-reviews") # Your custom target folder custom_path = "path to working directory" # Create target directory if it doesn't exist os.makedirs(custom_path, exist_ok=True) # Move contents to your custom directory for file_name in os.listdir(download_path): full_file_name = os.path.join(download_path, file_name) if os.path.isfile(full_file_name): shutil.copy(full_file_name, custom_path) print("Files copied to:", os.path.abspath(custom_path))
-```
+This script uses the `kagglehub` library to download and move the dataset to your desired working directory. If you encounter any issues with the API or need more control, refer to the official [Kaggle API Documentation](https://www.kaggle.com/docs/api). Alternatively, you can manually download the dataset from [Kaggle - Amazon Reviews](https://www.kaggle.com/datasets/purvitsharma/amazonn-reviews).
 📌 **Note**: For any API or access-related questions, please visit the [Kaggle API Docs](https://www.kaggle.com/docs/api). Alternatively, you can manually download the dataset directly from the Kaggle dataset page: [Amazon Review Dataset](https://www.kaggle.com/datasets/purvitsharma/amazonn-reviews) ---
 
 
  ## 📁 File Structure 
  ```bash 
- . ├── streamlit_userInterface.py # Main Streamlit app ├── pdt_reviewCollector.py # Amazon scraper logic ├── lstm_review_classifier.py # Logic to load model and predict ├── model_creation.py # Script to train and save LSTM model ├── model_functions.py # Prediction logic reused across app ├── tokenizer.sav # Saved tokenizer for preprocessing ├── hashed_pw.pkl # Pickled hashed passwords ├── images/ # UI assets ├── output.csv # User data ├── out.csv # Review predictions ├── outlink.csv # Product links ├── requirements.txt # Python dependencies └── README.md
+ . ├── streamlit_userInterface.py # Main Streamlit app
+├── pdt_reviewCollector.py # Amazon scraper logic
+├── lstm_review_classifier.py # Logic to load model and predict
+├── model_creation.py # Script to train and save LSTM model
+├── model_functions.py # Prediction logic reused across app
+├── tokenizer.sav # Saved tokenizer for preprocessing
+├── hashed_pw.pkl # Pickled hashed passwords
+├── images/ # UI assets
+├── output.csv # User data
+├── out.csv # Review predictions
+├── outlink.csv # Product links
+├── dataset_download.csv # Product links
+├── requirements.txt # Python dependencies
+└── README.md
 # Project overview
 ```
 ## 🎯 Steps to Run the Project 
