@@ -71,7 +71,7 @@ streamlit run ui.py
 ├── outlink.csv                                 # Product links
 ├── requirements.txt                            # Python dependencies
 └── README.md                                   # Project overview
-
+```bash
 ## 🎯 steps for running the repository
 1. run pdt_reviewCollector.py
 2. if planning to use customized model change the path to saved model and perform appropriate data inference.
