@@ -12,6 +12,7 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException
 
 # Custom module
 import amazonui
+from model_functions import prediction_result
 
 # Set Streamlit configuration
 st.set_page_config(layout="wide")
@@ -171,11 +172,16 @@ elif selected == 'Login':
                     lstname = df["product"].unique()
                     lstimg = df["image"].unique()
                     lstprize = df["prize"].unique()
-
-                    load_model, cv = pk.load(open('amazonui/svm_model.sav', 'rb'))
-                    result1 = load_model.predict(cv.transform(df['reviews']))
-                    df['predictions'] = result1
-                    df.replace({'predictions': {0: 'Negative', 1: 'Positive'}}, inplace=True)
+                    
+                    #loading lstm model
+                    review_prediction=prediction_result(df['reviews'].tolist())
+                    df['predictions'] = review_prediction
+                    
+                    #loading ml model
+                    # load_model, cv = pk.load(open('..../amazonui/svm_model.sav', 'rb'))
+                    # result1 = load_model.predict(cv.transform(df['reviews']))
+                    # df['predictions'] = result1
+                    #df.replace({'predictions': {0: 'Negative', 1: 'Positive'}}, inplace=True)
                     df.to_csv('out.csv', index=False)
 
                     pred_counts = df.groupby(['product'])['predictions'].value_counts().reset_index(name='counts')
