@@ -59,9 +59,7 @@ Copy
 Edit
 streamlit run ui.py
 ## 📁 File Structure
-csharp
-Copy
-Edit
+```bash
 .
 ├── streamlit_userInterface.py                  # Main Streamlit app
 ├── pdt_reviewCollector.py                       # Amazon scraper logic
